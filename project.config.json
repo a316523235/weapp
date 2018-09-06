@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.3",
-	"appid": "wx62db882df4562cf9",
-	"projectname": "%E8%B1%86%E7%AE%80",
+	"appid": "wx20cf771b6620112e",
+	"projectname": "weapp",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
