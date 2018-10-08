@@ -1,5 +1,6 @@
 var store = require('./store.js')
 var config = require('./config.js')
+var hot = require('../../utils/hot.js')
 module.exports = {
   getLocation: function (cb) {
     var location = store.location

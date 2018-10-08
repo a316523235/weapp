@@ -32,8 +32,10 @@ page{
   width: 128px;
 }
 .film-image image{
-  width: 100%;
-  height: 180px;
+  /* width: 100%;
+  height: 180px; */
+  width: 130px;
+  height: 130px;
 }
 .film-info{
   padding-left: 10px;
