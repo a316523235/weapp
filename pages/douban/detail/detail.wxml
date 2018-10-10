@@ -8,11 +8,12 @@
   <view class="container film-detail">
     <view class="film-item">
       <view class="film-image">
-        <image src="{{film.images.medium}}"></image>
+        <image src="{{film.pic}}"></image>
       </view>
       <view class="film-info">
         <view>
-          <text class="film-title">{{film.title}}</text>
+          <!-- <text class="film-title">{{film.title}}</text> -->
+          <text class="film-label">{{film.title}}</text>          
           <text class="film-year">{{film.year}}</text>
         </view>
         <view class="film-rating">

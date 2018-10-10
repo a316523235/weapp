@@ -10,12 +10,14 @@ Page({
       title: options.title
     })
     wx.request({
-      url: 'https://www.booyu.cn/douban/movie/subject?id=' + options.id,
+      url: 'https://www.booyu.cn/api/info?id=' + options.id,
       header: {
         'content-type': 'json'
       },
       success: function (res) {
-        var data = res.data
+        var data = res.data.content
+        console.log('start')
+        console.log(res)
         that.setData({
           film: data,
           showLoading: false
