@@ -37,6 +37,18 @@ page{
   width: 130px;
   height: 130px;
 }
+
+.film-item_2{
+  padding: 10px;
+}
+.film-image_2{
+  width: 700rpx;
+}
+.film-image_2 image{
+  width: 700rpx;
+  height: 700rpx;
+}
+
 .film-info{
   padding-left: 10px;
   flex: 1;

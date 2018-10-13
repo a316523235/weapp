@@ -1,5 +1,6 @@
 var functions = require('../functions.js')
-var url = 'https://www.booyu.cn/douban/movie/coming_soon'
+// var url = 'https://www.booyu.cn/douban/movie/coming_soon'
+var url = 'https://www.booyu.cn/dataoke/all'
 var pageSize = 20
 Page({
   data: {

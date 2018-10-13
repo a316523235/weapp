@@ -6,12 +6,44 @@
 <block wx:else>
   <scroll-view style="height: 100%;" scroll-y="true" class="container film-list" bindscroll="scroll">
     <block wx:for-items="{{films}}" wx:for-item="film">
-      <view class="film-item" bindtap="viewDetail" data-id="{{film.id}}" data-title="{{film.title}}">
+      <view class="film-item" bindtap="viewDetail" data-id="{{film.GoodsID}}" data-title="{{film.D_title}}">
         <view class="film-image">
-          <image src="{{film.images.medium}}"></image>
+          <image src="{{film.Pic}}"></image>
         </view>
         <view class="film-info">
           <view>
+            <text class="label">{{film.D_title}}</text>
+            <!-- <text class="film-year">{{film.year}}</text> -->
+          </view>
+          <view class="film-rating">
+            <block wx:if="{{film.Price > 0}}">
+              <text class="label">券后价</text>
+              <text class="rating">{{film.Price}}</text>
+            </block>
+            <block wx:else>
+              <text class="label">价格</text>
+              <text class="rating">{{film.Price}}</text>              
+            </block>
+          </view>
+          <view class="film-rating">
+            <block wx:if="{{film.Quan_price > 0}}">
+              <text class="label">券面值</text>
+              <text class="rating">{{film.Quan_price}}</text>
+            </block>
+            <block wx:else>
+              <!-- <text class="label">券面值未知</text> -->
+            </block>
+          </view>
+          <view class="film-rating">
+            <block wx:if="{{film.Commission > 0}}">
+              <text class="label">佣金比例</text>
+              <text class="rating">{{film.Commission}}%</text>
+            </block>
+            <block wx:else>
+              <!-- <text class="label">佣金比例</text> -->
+            </block>
+          </view>
+          <!-- <view>
             <text class="film-title">{{film.title}}</text>
             <text class="film-year">{{film.year}}</text>
           </view>
@@ -35,7 +67,7 @@
             <block wx:for-items="{{film.casts}}" wx:for-item="cast">
               <text class="person">{{cast.name}}</text>
             </block>
-          </view>
+          </view> -->
         </view> 
       </view>
     </block>
