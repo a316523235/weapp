@@ -36,8 +36,14 @@
           </block> -->
         </view>
         <view class="casts">
-          <text class="label">券后价：</text>
-          <text class="label">{{m1.toFixed1(film.price - film.quanValue, 2)}}</text>
+          <block wx:if="{{flim.quanValue}}">
+            <text class="label">券后价：</text>
+            <text class="label">{{m1.toFixed1(film.price - film.quanValue, 2)}}</text>
+          </block>
+          <block wx:else>
+              <text class="label">优惠券：</text>
+              <text class="label">无</text>
+            </block>
           <!-- <block wx:for-items="{{film.casts}}" wx:for-item="cast">
             <text class="person">{{cast.name}}</text>
           </block> -->
@@ -59,14 +65,14 @@
         </view>
       </view>
     </view>
-    <view class="tblin_items_btn" bindtap="copyTBL">一键复制</view>
-    <block wx:if="{{flim.Introduce}}">
+    <view class="tblin_items_btn copy-view" bindtap="copyTBL">一键复制</view>
+    <!-- <block wx:if="{{flim.Introduce}}">
       <view class="summary">
-        <text class="title">剧情简介</text>
+        <text class="title">推荐</text>
         <view class="content">
           {{film.summary}}
         </view>
       </view>
-    </block>
+    </block> -->
   </view>
 </block>

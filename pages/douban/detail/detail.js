@@ -33,7 +33,7 @@ Page({
         // self.setData({copyTip:true}),
         wx.showModal({
           title: '提示',
-          content: '复制成功',
+          content: '复制成功，打开手机淘宝领养',
           success: function (res) {
             if (res.confirm) {
               console.log('确定')

@@ -14,9 +14,20 @@ App({
             dataType: 'json',
             success: function (res) {
               console.log(res.data)
+              var goodsid = res.data.content
               if(res.data.status == true) {
-                wx.navigateTo({
-            url: '../detail/detail?id=' + res.data.content + '&title=t1&type=ing'
+                wx.showModal({
+                  title: '提示',
+                  content: '发现淘口令，是否跳转到商品优惠信息',
+                  success: function (res) {
+                    if (res.confirm) {
+                      wx.navigateTo({
+                        url: '../detail/detail?id=' + goodsid + '&title=简单券&type=ing'
+                      })
+                    } else if (res.cancel) {
+                      console.log('取消')
+                    }
+                  }
                 })
               }
             }

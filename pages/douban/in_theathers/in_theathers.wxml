@@ -34,10 +34,16 @@
               <!-- <text class="label">券面值未知</text> -->
             </block>
           </view>
+          <wxs module="m1">
+            var toFixed1 = function(value, number) {
+              return value.toFixed(number);
+            }
+            module.exports.toFixed1 = toFixed1;
+          </wxs>
           <view class="film-rating">
             <block wx:if="{{film.Commission > 0}}">
               <text class="label">佣金比例</text>
-              <text class="rating">{{film.Commission}}%</text>
+              <text class="rating">{{m1.toFixed1(film.Commission * 0.7, 0)}}%</text>
             </block>
             <block wx:else>
               <!-- <text class="label">佣金比例</text> -->

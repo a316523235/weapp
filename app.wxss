@@ -112,3 +112,9 @@ page{
   color: #666;
   text-align: center;
 }
+.copy-view {
+  width:700rpx;
+  text-align:center;
+  background:#eee;
+  line-height:200%;
+}
