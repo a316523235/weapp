@@ -1,0 +1,23 @@
+
+<view class="container film-detail">
+  <view class="film-item_2">
+    <view class="film-image_2">
+      <image src="../../../image/step_1.jpg"></image>
+    </view>
+    <view class="film-image_2">
+      <image src="../../../image/step_2.jpg"></image>
+    </view>
+    <view class="film-image_2">
+      <image src="../../../image/step_3.jpg"></image>
+    </view>
+    <view class="film-image_2">
+      <image src="../../../image/step_4.jpg"></image>
+    </view>
+    <view class="film-image_2">
+      <image src="../../../image/step_5.jpg"></image>
+    </view>
+    <view class="film-image_2">
+      <image src="../../../image/step_6.jpg"></image>
+    </view>
+  </view>
+</view>
