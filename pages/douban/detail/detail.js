@@ -33,15 +33,17 @@ Page({
         // self.setData({copyTip:true}),
         wx.showModal({
           title: '提示',
+          confirmText: '查看帮助',
           content: '复制成功，打开手机淘宝购买',
           success: function (res) {
             if (res.confirm) {
               console.log('确定')
+              wx.navigateTo({
+                url: '../help/help'
+              })
             } else if (res.cancel) {
               console.log('使用帮助')
-              wx.navigateTo({
-                url: '../detail/detail?id=' + ds.id + '&title=' + ds.title + '&type=ing'
-              })
+              
             }
           }
         })

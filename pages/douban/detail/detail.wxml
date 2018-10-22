@@ -36,7 +36,7 @@
           </block> -->
         </view>
         <view class="casts">
-          <block wx:if="{{flim.quanValue > 0}}">
+          <block wx:if="{{film.quanValue > 0}}">
             <text class="label">券后价：</text>
             <text class="label">{{m1.toFixed1(film.price - film.quanValue, 2)}}</text>
           </block>

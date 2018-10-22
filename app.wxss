@@ -49,6 +49,17 @@ page{
   height: 700rpx;
 }
 
+.film-image_help {
+  padding: 15rpx;
+}
+
+.film-image_help image{
+  width: 700rpx;
+  height: 1245rpx;
+  border:1px #eee solid;
+  border-radius: 30rpx;
+}
+
 .film-info{
   padding-left: 10px;
   flex: 1;
@@ -116,5 +127,5 @@ page{
   width:700rpx;
   text-align:center;
   background:#eee;
-  line-height:200%;
+  line-height:300%;
 }
