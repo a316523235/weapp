@@ -66,6 +66,8 @@
       </view>
     </view>
     <view class="tblin_items_btn copy-view" bindtap="copyTBL">一键复制</view>
+    <!--<button class="mini-btn mini-btn-1" type="default" size="mini" bindtap="copyTBL"> 复制 </button>
+      <button class="mini-btn" type="default" size="mini" open-type="share"> 分享 </button>-->
     <!-- <block wx:if="{{flim.Introduce}}">
       <view class="summary">
         <text class="title">推荐</text>
