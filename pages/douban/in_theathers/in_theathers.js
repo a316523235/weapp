@@ -9,6 +9,11 @@ Page({
     showLoading: true,
     start: 0
   },
+  onShow: function () {
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+  },
   onPullDownRefresh: function () {
     console.log('onPullDownRefresh', new Date())
   },

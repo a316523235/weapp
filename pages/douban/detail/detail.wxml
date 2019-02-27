@@ -56,13 +56,13 @@
             <text class="person">{{cast.name}}</text>
           </block> -->
         </view>
-        <view class="casts">
+        <!-- <view class="casts">
           <text class="label">淘口令：</text>
           <text class="label">{{film.tkl}}</text>
-          <!-- <block wx:for-items="{{film.casts}}" wx:for-item="cast">
+          <block wx:for-items="{{film.casts}}" wx:for-item="cast">
             <text class="person">{{cast.name}}</text>
-          </block> -->
-        </view>
+          </block>
+        </view> -->
       </view>
     </view>
     <view class="tblin_items_btn copy-view" bindtap="copyTBL">一键复制</view>

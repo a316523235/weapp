@@ -16,8 +16,5 @@
     <view class="film-image_help">
       <image src="../../../image/step_5.jpg"></image>
     </view>
-    <view class="film-image_help">
-      <image src="../../../image/step_6.jpg"></image>
-    </view>
   </view>
 </view>

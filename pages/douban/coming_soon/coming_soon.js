@@ -10,6 +10,11 @@ Page({
     loadMoreLoading: false,
     start: 0
   },
+  onShow: function () {
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+  },
   onPullDownRefresh: function () {
   },
   scroll: function(e){
